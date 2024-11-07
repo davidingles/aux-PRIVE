@@ -75,7 +75,7 @@ export default function EstucheConAsas({ title, escala, posicion }) {
         <pointLight position={[-100, 100, 100]} intensity={91111} decay={2} />
         <pointLight position={[100, -100, -100]} intensity={91111} decay={2} />
         <pointLight position={[100, -100, 100]} intensity={91111} decay={2} /> */}
-        <ambientLight intensity={2} />
+        <ambientLight intensity={4} />
         <Suspense fallback={<Fallback />}>
           {modelUrl && <Model url={modelUrl} miEscala={modelEscala} miPosicion={modelPosicion} />}
         </Suspense>
